@@ -9,8 +9,8 @@ server.use(express.json());
 server.use(Logger);
 server.use("/api/ingredients", ingredientsRouter);
 server.use("/api/recipes", recipeRouter);
-// server.use("/api/recing", recIngRouter);
-// server.use("/api/steps", stepsRouter);
+server.use("/api/recing", recIngRouter);
+server.use("/api/steps", stepsRouter);
 
 function Logger(req, res, next) {
  console.log(
