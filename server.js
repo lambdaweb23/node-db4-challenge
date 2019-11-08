@@ -8,7 +8,7 @@ const server = express();
 server.use(express.json());
 server.use(Logger);
 server.use("/api/ingredients", ingredientsRouter);
-// server.use("/api/recipes", recipeRouter);
+server.use("/api/recipes", recipeRouter);
 // server.use("/api/recing", recIngRouter);
 // server.use("/api/steps", stepsRouter);
 
