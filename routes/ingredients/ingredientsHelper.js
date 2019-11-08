@@ -8,8 +8,8 @@ const findById = id => {
    .where({ id })
    .first();
 };
-const add = ingrediant => {
- return knex("ingredients").insert(ingrediant);
+const add = ingredient => {
+ return knex("ingredients").insert(ingredient);
 };
 const remove = id => {
  return knex("ingredients")
